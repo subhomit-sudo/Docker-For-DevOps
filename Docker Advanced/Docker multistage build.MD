@@ -9,7 +9,7 @@ First check what is the size of docker image of flask-app-ecs project.(only pyth
 
 docker build -t python-app-full .
 
-![alt text](image.png)
+C:\Users\subhomit\Documents\Docker For DevOps\Docker Advanced\Images\image0.png
 
 
 You can see the size of python:3.9 image is around 1GB that is a big size, as a devops eng we need to optimize this size.
