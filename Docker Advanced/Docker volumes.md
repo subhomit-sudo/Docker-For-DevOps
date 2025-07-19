@@ -64,10 +64,11 @@
 ## Now create a table
 * create table aadhaar (id INT AUTO_INCREMENT PRIMARY KEY, message TEXT);
 * insert into aadhaar (message) VALUES (" Subhojit's aadhaar updated")
+* select * FROM aadhaar;
 
 ## Now Stop and Remove container
 
-* docker stop <id> && rm <id>
+* docker stop <id> && docker rm <id>
 
 ## Now run a new mysql container with same docker volume(mysql-data) , you can see the same database with same message persists
 
