@@ -10,7 +10,7 @@
 ```
 ## To make interactive with mysql container
 ```bash
-* docker exec -it <container id> bash
+* docker exec -it <container_id> bash
 
 ```
 
