@@ -1,4 +1,4 @@
-# How to push an image to DockerHub
+# How to push and pull an image to DockerHub
 
 ## Step:1 Create DockerHub Account
 
@@ -23,3 +23,9 @@
 ## Step:6 Push that image to DockerHub
 
 * docker push subhomit/python-app-mini:latest
+
+## Step:7 Pull any image from DockerHub
+
+* docker pull mysql
+
+* docker pull subhomit/python-app-mini:latest
