@@ -64,6 +64,7 @@ docker system prune
 ## Option 2: Remove all containers and images manually
 
 docker rm $(docker ps -aq)
+
 docker rmi $(docker images -aq)
 
 
