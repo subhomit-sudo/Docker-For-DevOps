@@ -7,7 +7,7 @@
 
 * docker run mysql:latest
 
-```bash
+```
 
 
 
