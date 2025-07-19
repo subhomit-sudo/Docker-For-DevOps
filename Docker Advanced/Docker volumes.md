@@ -5,10 +5,13 @@
 
 * docker pull mysql
 
-* docker run mysql:latest
+* docker run -d -e MYSQL_ROOT_PASSWORD=root mysql:latest
 
 ```
+## To make interactive with mysql container
+```bash
+* docker exec -it <container id> bash
 
-
+```
 
 
