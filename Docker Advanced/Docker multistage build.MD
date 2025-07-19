@@ -60,6 +60,25 @@ docker rm $(docker ps -aq)
 docker rmi $(docker images -aq)
 
 
+# Deleting Docker Images and Containers
+
+To clean up Docker resources such as images and containers, you can use the following commands:
+
+## Option 1: Prune the system
+
+This command removes all stopped containers, unused networks, dangling images, and build cache:
+
+```bash
+docker system prune
+
+
+docker rm $(docker ps -aq)
+
+
+docker rmi $(docker images -aq)
+
+
+
 
 
 
