@@ -50,6 +50,16 @@ Run the container now.
 docker run -d -p 80:80 python-app-mini:latest
 
 
+To delete docker images and containers
+
+docker system prune
+or
+
+docker rm $(docker ps -aq)
+
+docker rmi $(docker images -aq)
+
+
 
 
 
