@@ -18,7 +18,8 @@ You can see the size of python:3.9 image is around 1GB that is a big size, as a 
 
 
 Now we need to edit the Base image as python:3.9-slim.
-docker build -t python-app-slim .
+
+* docker build -t python-app-slim .
 
 ![alt text](image-1.png)
 
@@ -30,7 +31,7 @@ Check the size of slim image. It is around 137MB. We need to optimize more, here
 
 Now we need to create another Docker file as Dockerfile-multi-stage.
 
-docker build -f ./Dockerfile-multi-stage -t python-app-mini .
+* docker build -f ./Dockerfile-multi-stage -t python-app-mini .
 
 
 
@@ -46,7 +47,7 @@ Now check what will be the image size.
 
 Run the container now.
 
-docker run -d -p 80:80 python-app-mini:latest
+* docker run -d -p 80:80 python-app-mini:latest
 
 
 
