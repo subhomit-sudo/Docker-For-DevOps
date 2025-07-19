@@ -33,6 +33,25 @@
 ```bash
 * docker stop <container_id> && docker rm <container_id>
 ```
-### After that if we run MySQL container again we cant see KYC database so Docker Volume comes to the picture
+#### After that if we run MySQL container again we cant see KYC database so Docker Volume comes to the picture
 
+## Create and check Docker volume
+```bash
+* docker volume create mysql-data
 
+* docker volume ls
+```
+
+## To inspect docker volume
+```bash
+* docker inspect mysql-data
+
+* And we can see Mountpoint path , docker volume (mysql-data) mounted with mountpoint path in local storage
+```
+## Now create a new mysql container with mysql-data volume
+```bash
+* docker run -d -e MYSQL_ROOT_PASSWORD=root -v mysql-data:/var/lib/mysql mysql:latest
+
+## Now inspect and go the mountpoint path , you can see that folder is not empty.
+
+```
