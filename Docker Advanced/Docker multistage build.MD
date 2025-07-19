@@ -59,13 +59,13 @@ To clean up Docker resources such as images and containers, you can use the foll
 
 This command removes all stopped containers, unused networks, dangling images, and build cache:
 
-docker system prune
+* docker system prune
 
 ## Option 2: Remove all containers and images manually
 
-docker rm $(docker ps -aq)
+* docker rm $(docker ps -aq)
 
-docker rmi $(docker images -aq)
+* docker rmi $(docker images -aq)
 
 
 
