@@ -6,7 +6,7 @@
 
 ```
 ## Write Docker-Compose in yml
-```bash
+```yaml
 services:
   mysql:
     image: mysql:5.7
