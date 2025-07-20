@@ -1,7 +1,8 @@
+```bash
 # What is Distroless image?
 
 "Distroless" images contain only your application and its runtime dependencies. They do not contain package managers, shells or any other programs you would expect to find in a standard Linux distribution.
-
+```
 ## Building docker image
 
 First check what is the size of docker image of flask-app-ecs project.(only python:3.9 image)
