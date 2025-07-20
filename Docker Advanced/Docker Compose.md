@@ -22,11 +22,11 @@ services:
     networks:
       - twotier
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uadmin", "-padmin"]
       interval: 10s
-      timeout: 5s
       retries: 5
       start_period: 60s
+      timeout: 5s
 
   flask-app:
     build:
@@ -44,12 +44,6 @@ services:
     networks:
       - twotier
     restart: always
-    healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:5000/health || exit 1"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 30s
 
 networks:
   twotier:
