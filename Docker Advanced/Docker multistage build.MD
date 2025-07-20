@@ -6,7 +6,7 @@ They do not contain package managers, shells or any other programs you would
 expect to find in a standard Linux distribution.
 ```
 
-## Building docker image
+## Building Docker Image
 ```bash
 
 First check what is the size of docker image of flask-app-ecs project.(only python:3.9 image)
