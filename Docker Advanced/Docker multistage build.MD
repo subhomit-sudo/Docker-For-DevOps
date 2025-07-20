@@ -68,13 +68,13 @@ Now check what will be the image size.
 ```bash
 To clean up Docker resources such as images and containers, you can use the following commands:
 
-## Option 1: Prune the system
+# Option 1: Prune the system
 
 This command removes all stopped containers, unused networks, dangling images, and build cache:
 
 * docker system prune
 
-## Option 2: Remove all containers and images manually
+# Option 2: Remove all containers and images manually
 
 * docker rm $(docker ps -aq)
 
